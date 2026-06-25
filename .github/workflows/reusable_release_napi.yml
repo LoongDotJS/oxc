@@ -24,7 +24,7 @@ jobs:
         id: check
         with:
           file-name: napi/${{ inputs.name }}/package.json
-          file-url: https://unpkg.com/oxc-${{ inputs.name }}@latest/package.json
+          file-url: https://unpkg.com/@loongdotjs/oxc-${{ inputs.name }}@latest/package.json
 
   build:
     needs: check

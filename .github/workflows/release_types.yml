@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   check:
-    if: github.repository == 'oxc-project/oxc'
+    if: github.repository == 'LoongDotJS/oxc'
     name: Check version
     runs-on: ubuntu-slim
     outputs:
