@@ -1,5 +1,5 @@
 {
-  "name": "oxc-parser",
+  "name": "@loongdotjs/oxc-parser",
   "version": "0.143.0",
   "description": "Oxc Parser Node API",
   "keywords": [
@@ -16,7 +16,7 @@
   "author": "Boshen and oxc contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oxc-project/oxc.git",
+    "url": "git+https://github.com/LoongDotJS/oxc.git",
     "directory": "napi/parser"
   },
   "funding": {
@@ -76,7 +76,7 @@
     "bench": "vitest bench --run ./bench.bench.js"
   },
   "dependencies": {
-    "@oxc-project/types": "workspace:^"
+    "@loongdotjs/oxc-types": "workspace:^"
   },
   "devDependencies": {
     "@codspeed/vitest-plugin": "^5.0.0",
@@ -97,7 +97,7 @@
   "napi": {
     "binaryName": "parser",
     "dtsHeaderFile": "src-js/header.d.ts",
-    "packageName": "@oxc-parser/binding",
+    "packageName": "@loongdotjs/oxc-parser-binding",
     "targets": [
       "aarch64-apple-darwin",
       "aarch64-linux-android",

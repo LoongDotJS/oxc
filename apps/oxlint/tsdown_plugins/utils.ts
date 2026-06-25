@@ -1,6 +1,6 @@
-import { parseSync } from "oxc-parser";
+import { parseSync } from "@loongdotjs/oxc-parser";
 
-import type { Program } from "@oxc-project/types";
+import type { Program } from "@loongdotjs/oxc-types";
 
 /**
  * Parse code and return the AST.

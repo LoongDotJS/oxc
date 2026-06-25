@@ -1,1 +1,1 @@
-export * from '@oxc-minify/binding-wasm32-wasi'
+export * from '@loongdotjs/oxc-minify-binding-wasm32-wasi'

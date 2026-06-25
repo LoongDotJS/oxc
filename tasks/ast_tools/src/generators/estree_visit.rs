@@ -500,7 +500,7 @@ fn generate(codegen: &Codegen) -> Codes {
     // Oxlint version also allows any arbitrary properties (selectors).
     #[rustfmt::skip]
     let visitor_type_parser = format!("
-        import * as ESTree from '@oxc-project/types';
+        import * as ESTree from '@loongdotjs/oxc-types';
 
         export interface VisitorObject {{
             {visitor_type}
@@ -534,7 +534,7 @@ fn generate(codegen: &Codegen) -> Codes {
     // - `{ enter, exit }` object (non-leaf node visitor)
     #[rustfmt::skip]
     let walk_dts_parser = "
-        import type * as ESTree from '@oxc-project/types';
+        import type * as ESTree from '@loongdotjs/oxc-types';
 
         type VisitFn = (node: ESTree.Node) => void;
         type EnterExit = { enter: VisitFn; exit: VisitFn };

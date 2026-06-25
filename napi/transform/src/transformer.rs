@@ -66,7 +66,7 @@ pub struct TransformResult {
     /// Example:
     ///
     /// ```text
-    /// { "_objectSpread": "@oxc-project/runtime/helpers/objectSpread2" }
+    /// { "_objectSpread": "@loongdotjs/oxc-runtime/helpers/objectSpread2" }
     /// ```
     #[napi(ts_type = "Record<string, string>")]
     pub helpers_used: FxHashMap<String, String>,
@@ -252,7 +252,7 @@ pub struct CompilerAssumptions {
     ///
     /// Otherwise, the output will be:
     /// ```js
-    /// import _defineProperty from "@oxc-project/runtime/helpers/defineProperty";
+    /// import _defineProperty from "@loongdotjs/oxc-runtime/helpers/defineProperty";
     /// class Test {
     ///   constructor() {
     ///     _defineProperty(this, "field", 2);
@@ -717,7 +717,7 @@ pub enum HelperMode {
     /// Example:
     ///
     /// ```js
-    /// import helperName from "@oxc-project/runtime/helpers/helperName";
+    /// import helperName from "@loongdotjs/oxc-runtime/helpers/helperName";
     /// helperName(...arguments);
     /// ```
     #[default]

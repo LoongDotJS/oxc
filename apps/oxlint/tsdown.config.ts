@@ -50,7 +50,7 @@ const definedGlobals = {
   CONFORMANCE: CONFORMANCE ? "true" : "false",
 };
 
-// Base config for `@oxlint/plugins` package.
+// Base config for `@loongdotjs/oxlint-plugins` package.
 // "node12" target to match `engines` field of last ESLint 8 release (8.57.1).
 const pluginsPkgConfig = defineConfig({
   ...commonConfig,
@@ -102,7 +102,7 @@ export default defineConfig([
       neverBundle: [
         // External native bindings
         "./oxlint.*.node",
-        "@oxlint/*",
+        "@loongdotjs/oxlint-binding/*",
         // Optional peer dependency; must be installed by the user
         "vite-plus",
       ],
@@ -118,7 +118,7 @@ export default defineConfig([
     },
   },
 
-  // `@oxlint/plugins` package.
+  // `@loongdotjs/oxlint-plugins` package.
   // Dual package - both ESM and CommonJS.
   {
     ...pluginsPkgConfig,

@@ -125,7 +125,7 @@ pub struct CompilerAssumptions {
     ///
     /// Otherwise, the output will be:
     /// ```js
-    /// import _defineProperty from "@oxc-project/runtime/helpers/defineProperty";
+    /// import _defineProperty from "@loongdotjs/oxc-runtime/helpers/defineProperty";
     /// class Test {
     ///   constructor() {
     ///     _defineProperty(this, "field", 2);

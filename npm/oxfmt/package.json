@@ -1,5 +1,5 @@
 {
-  "name": "oxfmt",
+  "name": "@loongdotjs/oxfmt",
   "version": "0.62.0",
   "description": "Formatter for the JavaScript Oxidation Compiler",
   "keywords": [
@@ -16,7 +16,7 @@
   "author": "Boshen and oxc contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oxc-project/oxc",
+    "url": "git+https://github.com/LoongDotJS/oxc.git",
     "directory": "npm/oxfmt"
   },
   "funding": {
@@ -58,7 +58,7 @@
   },
   "napi": {
     "binaryName": "oxfmt",
-    "packageName": "@oxfmt/binding",
+    "packageName": "@loongdotjs/oxfmt-binding",
     "targets": [
       "aarch64-apple-darwin",
       "aarch64-linux-android",

@@ -23,7 +23,7 @@ async function main() {
     platform: "browser",
     resolve: {
       alias: {
-        "@oxc-parser/binding-wasm32-wasi": path.resolve("./src-js/parser.wasi-browser.js"),
+        "@loongdotjs/oxc-parser-binding-wasm32-wasi": path.resolve("./src-js/parser.wasi-browser.js"),
       },
     },
     plugins: [

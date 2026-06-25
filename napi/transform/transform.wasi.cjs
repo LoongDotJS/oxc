@@ -128,14 +128,14 @@ const __wasmDebugFilePath = __nodePath.join(__dirname, 'transform.wasm32-wasi.de
 if (__nodeFs.existsSync(__wasmDebugFilePath)) {
   __wasmFilePath = __wasmDebugFilePath
 } else if (!__nodeFs.existsSync(__wasmFilePath)) {
-  const __wasiPackageEntry = require.resolve('@oxc-transform/binding-wasm32-wasi')
+  const __wasiPackageEntry = require.resolve('@loongdotjs/oxc-transform-binding-wasm32-wasi')
   const __packagedWasmFilePath = __nodePath.join(
     __nodePath.dirname(__wasiPackageEntry),
     'transform.wasm32-wasi.wasm',
   )
   if (!__nodeFs.existsSync(__packagedWasmFilePath)) {
     throw new Error(
-      '@oxc-transform/binding-wasm32-wasi is installed but is missing transform.wasm32-wasi.wasm.',
+      '@loongdotjs/oxc-transform-binding-wasm32-wasi is installed but is missing transform.wasm32-wasi.wasm.',
     )
   }
   __wasmFilePath = __packagedWasmFilePath

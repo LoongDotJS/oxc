@@ -1,10 +1,10 @@
 import fs from "node:fs";
 import { join as pathJoin } from "node:path";
-import { Visitor } from "oxc-parser";
+import { Visitor } from "@loongdotjs/oxc-parser";
 import { parse } from "./utils.ts";
 
 import type { Plugin } from "rolldown";
-import type * as ESTree from "oxc-parser";
+import type * as ESTree from "@loongdotjs/oxc-parser";
 
 // Name of binary search function to inline
 const INLINE_FUNC_NAME = "firstTokenAtOrAfter";

@@ -318,7 +318,7 @@ fn test() {
         ),
         (
             r"
-            import { definePlugin } from '@oxlint/plugins';
+            import { definePlugin } from '@loongdotjs/oxlint-plugins';
             import { fsSync } from 'node:fs';
             import { path } from 'node:path';
             ",

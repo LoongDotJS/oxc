@@ -1,12 +1,12 @@
 {
-  "name": "@oxc-project/runtime",
+  "name": "@loongdotjs/oxc-runtime",
   "version": "0.143.0",
   "description": "Oxc's modular runtime helpers",
   "homepage": "https://oxc.rs",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oxc-project/oxc.git",
+    "url": "git+https://github.com/LoongDotJS/oxc.git",
     "directory": "npm/runtime"
   },
   "type": "commonjs",

@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 
-import { transformSync } from "oxc-transform";
+import { transformSync } from "@loongdotjs/oxc-transform";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({

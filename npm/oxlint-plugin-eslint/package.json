@@ -1,5 +1,5 @@
 {
-  "name": "oxlint-plugin-eslint",
+  "name": "@loongdotjs/oxlint-plugin-eslint",
   "version": "1.77.0",
   "description": "ESLint's built-in rules as an Oxlint plugin",
   "keywords": [
@@ -14,7 +14,7 @@
   "author": "Boshen and oxc contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oxc-project/oxc.git",
+    "url": "git+https://github.com/LoongDotJS/oxc.git",
     "directory": "npm/oxlint-plugin-eslint"
   },
   "funding": {

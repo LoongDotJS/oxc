@@ -7,7 +7,7 @@
     {
       "groupName": "oxlint",
       "matchManagers": ["npm"],
-      "matchPackageNames": ["oxlint", "oxlint-tsgolint"],
+      "matchPackageNames": ["@loongdotjs/oxlint", "oxlint-tsgolint"],
       "rangeStrategy": "auto",
       "schedule": ["at any time"],
       "automergeSchedule": ["at any time"]

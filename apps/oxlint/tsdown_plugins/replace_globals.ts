@@ -1,7 +1,7 @@
-import { Visitor } from "oxc-parser";
+import { Visitor } from "@loongdotjs/oxc-parser";
 import { parse } from "./utils.ts";
 
-import type { Expression, MemberExpression } from "@oxc-project/types";
+import type { Expression, MemberExpression } from "@loongdotjs/oxc-types";
 import type { Plugin } from "rolldown";
 
 // Globals.

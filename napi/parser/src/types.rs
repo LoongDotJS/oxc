@@ -66,7 +66,7 @@ pub struct ParseResult {
 
 #[napi]
 impl ParseResult {
-    #[napi(getter, ts_return_type = "import(\"@oxc-project/types\").Program")]
+    #[napi(getter, ts_return_type = "import(\"@loongdotjs/oxc-types\").Program")]
     pub fn get_program(&mut self) -> String {
         mem::take(&mut self.program_and_fixes)
     }

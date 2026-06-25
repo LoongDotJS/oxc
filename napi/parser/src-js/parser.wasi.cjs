@@ -128,14 +128,14 @@ const __wasmDebugFilePath = __nodePath.join(__dirname, 'parser.wasm32-wasi.debug
 if (__nodeFs.existsSync(__wasmDebugFilePath)) {
   __wasmFilePath = __wasmDebugFilePath
 } else if (!__nodeFs.existsSync(__wasmFilePath)) {
-  const __wasiPackageEntry = require.resolve('@oxc-parser/binding-wasm32-wasi')
+  const __wasiPackageEntry = require.resolve('@loongdotjs/oxc-parser-binding-wasm32-wasi')
   const __packagedWasmFilePath = __nodePath.join(
     __nodePath.dirname(__wasiPackageEntry),
     'parser.wasm32-wasi.wasm',
   )
   if (!__nodeFs.existsSync(__packagedWasmFilePath)) {
     throw new Error(
-      '@oxc-parser/binding-wasm32-wasi is installed but is missing parser.wasm32-wasi.wasm.',
+      '@loongdotjs/oxc-parser-binding-wasm32-wasi is installed but is missing parser.wasm32-wasi.wasm.',
     )
   }
   __wasmFilePath = __packagedWasmFilePath

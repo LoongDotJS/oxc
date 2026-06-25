@@ -1,5 +1,5 @@
 {
-  "name": "oxc-transform",
+  "name": "@loongdotjs/oxc-transform",
   "version": "0.143.0",
   "description": "Oxc Transformer Node API",
   "keywords": [
@@ -18,7 +18,7 @@
   "author": "Boshen and oxc contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oxc-project/oxc.git",
+    "url": "git+https://github.com/LoongDotJS/oxc.git",
     "directory": "napi/transform"
   },
   "funding": {
@@ -57,7 +57,7 @@
   },
   "napi": {
     "binaryName": "transform",
-    "packageName": "@oxc-transform/binding",
+    "packageName": "@loongdotjs/oxc-transform-binding",
     "targets": [
       "aarch64-apple-darwin",
       "aarch64-linux-android",

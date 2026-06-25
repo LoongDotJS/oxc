@@ -114,7 +114,7 @@ describe("target", () => {
     expect(ret.errors.length).toBe(0);
     expect(ret.code).toBeDefined();
     expect(ret.code).toMatchInlineSnapshot(`
-      "import _classPrivateFieldInitSpec from "@oxc-project/runtime/helpers/classPrivateFieldInitSpec";
+      "import _classPrivateFieldInitSpec from "@loongdotjs/oxc-runtime/helpers/classPrivateFieldInitSpec";
       var _a = /* @__PURE__ */ new WeakMap();
       class Foo {
       	constructor() {
@@ -131,7 +131,7 @@ describe("helpers", () => {
     [HelperMode.External, "babelHelpers.objectSpread2({}, x);\n"],
     [
       HelperMode.Runtime,
-      'import _objectSpread from "@oxc-project/runtime/helpers/objectSpread2";\n_objectSpread({}, x);\n',
+      'import _objectSpread from "@loongdotjs/oxc-runtime/helpers/objectSpread2";\n_objectSpread({}, x);\n',
     ],
   ];
 
@@ -143,7 +143,7 @@ describe("helpers", () => {
     });
     expect(ret.code).toEqual(expected);
     expect(ret.helpersUsed).toStrictEqual({
-      objectSpread2: "@oxc-project/runtime/helpers/objectSpread2",
+      objectSpread2: "@loongdotjs/oxc-runtime/helpers/objectSpread2",
     });
   });
 });
@@ -320,8 +320,8 @@ describe("legacy decorator", () => {
       },
     });
     expect(ret.code).toMatchInlineSnapshot(`
-      "import _decorate from "@oxc-project/runtime/helpers/decorate";
-      import _decorateParam from "@oxc-project/runtime/helpers/decorateParam";
+      "import _decorate from "@loongdotjs/oxc-runtime/helpers/decorate";
+      import _decorateParam from "@loongdotjs/oxc-runtime/helpers/decorateParam";
       let C = class C {
       	prop = 0;
       	method(param) {}
@@ -350,9 +350,9 @@ describe("legacy decorator", () => {
         },
       });
       expect(ret.code).toMatchInlineSnapshot(`
-        "import _decorateMetadata from "@oxc-project/runtime/helpers/decorateMetadata";
-        import _decorate from "@oxc-project/runtime/helpers/decorate";
-        import _decorateParam from "@oxc-project/runtime/helpers/decorateParam";
+        "import _decorateMetadata from "@loongdotjs/oxc-runtime/helpers/decorateMetadata";
+        import _decorate from "@loongdotjs/oxc-runtime/helpers/decorate";
+        import _decorateParam from "@loongdotjs/oxc-runtime/helpers/decorateParam";
         let C = class C {
         	prop = 0;
         	method(param) {}
@@ -387,8 +387,8 @@ describe("legacy decorator", () => {
         },
       });
       expect(ret.code).toMatchInlineSnapshot(`
-        "import _decorateMetadata from "@oxc-project/runtime/helpers/decorateMetadata";
-        import _decorate from "@oxc-project/runtime/helpers/decorate";
+        "import _decorateMetadata from "@loongdotjs/oxc-runtime/helpers/decorateMetadata";
+        import _decorate from "@loongdotjs/oxc-runtime/helpers/decorate";
         class Source {
         	prop;
         }
@@ -407,8 +407,8 @@ describe("legacy decorator", () => {
         },
       });
       expect(ret.code).toMatchInlineSnapshot(`
-        "import _decorateMetadata from "@oxc-project/runtime/helpers/decorateMetadata";
-        import _decorate from "@oxc-project/runtime/helpers/decorate";
+        "import _decorateMetadata from "@loongdotjs/oxc-runtime/helpers/decorateMetadata";
+        import _decorate from "@loongdotjs/oxc-runtime/helpers/decorate";
         class Source {
         	prop;
         }
@@ -511,7 +511,7 @@ describe("typescript", () => {
         },
       });
       expect(ret.code).toMatchInlineSnapshot(`
-        "import _decorate from "@oxc-project/runtime/helpers/decorate";
+        "import _decorate from "@loongdotjs/oxc-runtime/helpers/decorate";
         class Foo {
         	constructor() {
         		this.b = 1;

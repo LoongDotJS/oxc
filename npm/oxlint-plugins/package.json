@@ -1,5 +1,5 @@
 {
-  "name": "@oxlint/plugins",
+  "name": "@loongdotjs/oxlint-plugins",
   "version": "1.77.0",
   "description": "Plugin utilities for Oxlint",
   "keywords": [
@@ -14,7 +14,7 @@
   "author": "Boshen and oxc contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oxc-project/oxc.git",
+    "url": "git+https://github.com/LoongDotJS/oxc.git",
     "directory": "npm/oxlint-plugins"
   },
   "funding": {

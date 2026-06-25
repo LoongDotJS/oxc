@@ -1,1 +1,1 @@
-export * from '@oxc-parser/binding-wasm32-wasi'
+export * from '@loongdotjs/oxc-parser-binding-wasm32-wasi'

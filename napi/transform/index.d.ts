@@ -81,7 +81,7 @@ export interface CompilerAssumptions {
    *
    * Otherwise, the output will be:
    * ```js
-   * import _defineProperty from "@oxc-project/runtime/helpers/defineProperty";
+   * import _defineProperty from "@loongdotjs/oxc-runtime/helpers/defineProperty";
    * class Test {
    *   constructor() {
    *     _defineProperty(this, "field", 2);
@@ -144,7 +144,7 @@ export declare const enum HelperMode {
    * Example:
    *
    * ```js
-   * import helperName from "@oxc-project/runtime/helpers/helperName";
+   * import helperName from "@loongdotjs/oxc-runtime/helpers/helperName";
    * helperName(...arguments);
    * ```
    */
@@ -570,7 +570,7 @@ export interface TransformResult {
    * Example:
    *
    * ```text
-   * { "_objectSpread": "@oxc-project/runtime/helpers/objectSpread2" }
+   * { "_objectSpread": "@loongdotjs/oxc-runtime/helpers/objectSpread2" }
    * ```
    */
   helpersUsed: Record<string, string>
