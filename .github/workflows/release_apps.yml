@@ -788,6 +788,7 @@ jobs:
           embed-url: ${{ env.RELEASE_EMBED_URL }}
 
   bump:
+    if: false # disabled: targets oxc-project repos, not applicable in this fork
     needs: [check, smoke]
     name: Bump oxlint dependents
     runs-on: ubuntu-slim
