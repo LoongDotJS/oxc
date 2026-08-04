@@ -292,8 +292,7 @@ jobs:
             rust-oxlint-**.tar.gz
 
   notify-approval:
-    needs: [check, build-oxlint, build-oxlint-freebsd, build-oxfmt, build-oxfmt-freebsd]
-    if: needs.check.outputs.version_changed == 'true'
+    if: false # disabled: Discord not used in this fork
     name: Notify Approval
     runs-on: ubuntu-slim
     steps:
@@ -304,7 +303,7 @@ jobs:
 
   publish-oxlint:
     name: Publish Oxlint
-    needs: [check, build-oxlint, build-oxlint-freebsd, notify-approval]
+    needs: [check, build-oxlint, build-oxlint-freebsd]
     runs-on: ubuntu-slim
     environment: release
     permissions:
@@ -608,7 +607,7 @@ jobs:
 
   publish-oxfmt:
     name: Publish Oxfmt
-    needs: [check, build-oxfmt, build-oxfmt-freebsd, notify-approval]
+    needs: [check, build-oxfmt, build-oxfmt-freebsd]
     runs-on: ubuntu-slim
     environment: release
     permissions:
