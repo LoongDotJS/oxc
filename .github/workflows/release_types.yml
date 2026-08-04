@@ -1,4 +1,4 @@
-name: Release @oxc-project/types
+name: Release @loongdotjs/oxc-types
 
 permissions: {}
 
@@ -29,12 +29,12 @@ jobs:
         id: check
         with:
           file-name: npm/oxc-types/package.json
-          file-url: https://unpkg.com/@oxc-project/types/package.json
+          file-url: https://unpkg.com/@loongdotjs/oxc-types/package.json
 
   build:
     needs: check
     if: needs.check.outputs.version_changed == 'true'
-    name: Release @oxc-project/types
+    name: Release @loongdotjs/oxc-types
     runs-on: ubuntu-slim
     permissions:
       id-token: write # for `pnpm publish --provenance`
