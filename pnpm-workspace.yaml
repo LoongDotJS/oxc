@@ -48,6 +48,7 @@ minimumReleaseAgeExclude:
   - "@vitejs/devtools"
   - "@vitest/*"
   - "@voidzero-dev/*"
+  - "@loongdotjs/*"
   - oxc-parser
   - oxfmt
   - oxlint

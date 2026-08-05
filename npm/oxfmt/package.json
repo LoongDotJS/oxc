@@ -1,6 +1,6 @@
 {
   "name": "@loongdotjs/oxfmt",
-  "version": "0.62.0",
+  "version": "0.62.1",
   "description": "Formatter for the JavaScript Oxidation Compiler",
   "keywords": [
     "formatter",
