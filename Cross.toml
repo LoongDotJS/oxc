@@ -3,3 +3,9 @@ passthrough = [
   "CI", # for crates/oxc_traverse/build.rs
   "JEMALLOC_SYS_WITH_LG_PAGE",
 ]
+
+# cross releases (v0.2.5) predate loongarch64 image support, so it falls back
+# to the host cargo and links with the host `cc`, which cannot link
+# loongarch64 object files. Pin the image that cross-rs has published since 2024.
+[target.loongarch64-unknown-linux-gnu]
+image = "ghcr.io/cross-rs/loongarch64-unknown-linux-gnu:main"
